@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/bootstrap-rtl.css" >
+    <link rel="stylesheet" href="css/fontiran.css" >
+    <link rel="stylesheet" href="css/all.min.css" >
+    <!--Start link for calendar-->
+    <link href='css/normalizecalendar.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/persianDatepicker-default.css" />
+    <link href="css/stylecalendar.css" rel="stylesheet" />
+    <!--End link for calendar-->
+    <script src="js/modernizr.js"></script>
+    <link rel="stylesheet" href="css/style.css" >
+
+    <!--Start link and favicon-->
+    <title>گروه هتل های ایرانگردی و جهانگردی</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <!--End link and favicon-->
+</head>
+  <body dir="rtl">
+   
+   <!--HEAAAADERRRRRR-->
+   <header class="mt-2">
+       <div class="container">
+
+           <div class="row">
+
+               <nav class="navbar navbar-expand-lg navbar-light bg-dark p-0 menu">
+
+                   <div class="col-lg-2 col-sm-12 logo-pos">
+
+                       <a class="navbar-brand" href="index.html">
+                           <img class="logo" src="img/logo.png" width="150" height="60" alt="">
+                       </a>
+
+                   </div>
+
+                   <div class="col-lg-10 col-sm-12">
+
+                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                       </button>
+
+                       <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                           <ul class="navbar-nav  pr-0">
+                               <li class="nav-item active">
+                                   <a class="nav-link" href="index.html">صفحه اصلی <span class="sr-only">(current)</span></a>
+                               </li>
+                               <li class="nav-item">
+                                   <a class="nav-link" href="Hotel-list.html">هتل های ما</a>
+                               </li>
+                               <li class="nav-item">
+                                   <a class="nav-link" href="#">درباره ما</a>
+                               </li>
+                               <li class="nav-item">
+                                   <a class="nav-link" href="#">اخبار و رویداد ها</a>
+                               </li>
+                               <li class="nav-item">
+                                   <a class="nav-link" href="#">جاذبه های گردشگری</a>
+                               </li>
+                               <li class="nav-item">
+                                   <a class="nav-link" href="#">تورهای مسافرتی</a>
+                               </li>
+                               <li class="nav-item">
+                                   <a class="nav-link" href="about-us.html">ارتباط با ما</a>
+                               </li>
+                           </ul>
+
+                           <div class="phone mr-auto">
+
+                               <span>021-5678</span>
+                               <i class="fas fa-phone"></i>
+
+                           </div>
+
+                       </div>
+
+                   </div>
+               </nav>
+
+
+           </div>
+
+       </div>
+   </header>
+
+
+
+<!------Background & BTN---------------->
+    <section class="bg">
+                   <div class="container btn-pos">
+                       <div class="col-lg-12  col-sm-12">
+                           <div class="btn-location">
+                               <button type="button" class="btn rounded reserve">
+                               <i class="fas fa-angle-right"></i>
+                       پیگیری رزرو
+                               </button>
+                               <button type="button" class="btn rounded worker ">بازنشستگان</button>
+                           </div>
+                       </div>
+                   </div>
+    </section>
+
+
+
+<!------Form SECTIONS---------------->
+   <section>
+       <div class="container box-pos">
+
+           <div class="row rounded box">
+
+               <div class="col-lg-4 col-sm-12 input-pos">
+                   <div class="input-box">
+                       <i class="fas fa-map-marker-alt pl-2"></i>
+                       <input list="cities" type="text" value="" placeholder="قصد اقامت در چه شهری را دارید؟">
+                       <datalist  id="cities" >
+                           <option value="تهران ">
+                           <option value="گیلان">
+                           <option value="آذربایجان شرقی">
+                           <option value="خوزستان">
+                           <option value="فارس">
+                           <option value="اصفهان">
+                           <option value="خراسان رضوی">
+                           <option value="قزوین">
+                           <option value="سمنان">
+                           <option value="قم">
+                           <option value="زنجان">
+                           <option value="مازندران">
+                           <option value="گلستان">
+                           <option value="اردبیل">
+                           <option value="آذربایجان غربی">
+                           <option value="همدان">
+                           <option value="کردستان">
+                           <option value="کرمانشاه">
+                           <option value="لرستان">
+                           <option value="بوشهر">
+                           <option value="کرمان">
+                           <option value="هرمزگان">
+                           <option value="چهارمحال و بختیاری">
+                           <option value="یزد">
+                           <option value="سیستان و بلوچستان">
+                           <option value="ایلام">
+                           <option value="کهگلویه و بویراحمد">
+                           <option value="خراسان شمالی">
+                           <option value="خراسان جنوبی">
+                           <option value="البرز">
+                       </datalist>
+
+                   </div>
+               </div>
+
+               <div class="col-lg-2 col-sm-12 input-pos">
+                   <div class="input-box">
+                       <i class="fas fa-calendar-alt pl-2"></i>
+                       <!--class="usage" for calendar-->
+                       <input id="input1" type="text" value="" placeholder="تاریخ شروع" class="usage">
+                   </div>
+
+               </div>
+
+               <div class="col-lg-2 col-sm-12 input-pos">
+                   <div class="input-box">
+                       <i class="fas fa-calendar-alt pl-2"></i>
+                       <!--class="usage" for calendar-->
+                       <input id="input2" type="text" value="" placeholder="تاریخ پایان" class="usage">
+                   </div>
+
+               </div>
+
+               <div class="col-lg-4 col-sm-12 input-pos text-btn">
+                   <div class="form-btn">
+                       <i class="fas fa-bell pl-2"></i>
+                       <span> برای مشاهده لیست هتل ها  <a class="here-text" href="#"> اینجا </a> کلیک کنید.</span>
+
+                       <button type="button" class="btn search-hotel mt-2"> جستجو و رزرو هتل</button>
+                   </div>
+
+               </div>
+
+           </div>
+
+       </div>
+   </section>
+
+
+
+<!------BLUE BOX SECTIONS---------------->
+
+    <section>
+    <div class="container mt-4 mb-4">
+        <div class="row">
+            <div class="col-lg-4 col-sm-12 mb-md-4 box-space">
+                <a href="#" class="bg1">
+                    <div class="border-box"></div>
+                    <div class="blue-box">
+                        <h6 class="info">
+                            پیشنهادات ویژه
+                        </h6>
+                    </div>
+
+                </a>
+            </div>
+
+
+            <div class="col-lg-4 col-sm-12 mb-md-4 box-space">
+                <a href="#" class="bg2">
+                    <div class="border-box"></div>
+                    <div class="blue-box">
+                        <h6 class="info">
+                            باشگاه گردشگران هتل های جهانگردی
+                        </h6>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-4 col-sm-12 box-space">
+                <a href="#" class="bg3">
+                    <div class="border-box"></div>
+                    <div class="blue-box">
+                        <h6 class="info">
+                            رزواسیون
+                        </h6>
+
+                    </div>
+                </a>
+            </div>
+            </div>
+        </div>
+
+</section>
+
+
+
+<!------suggestion----- TITLE ---------------->
+
+   <section>
+       <div class="container">
+           <div class="row">
+               <div class="col-sm-12 col-lg-12">
+                   <h3 class="text-center title" >
+                       <i class="fas fa-grip-lines pl-2"></i>
+                       پیشنهادات ویژه
+                       <i class="fas fa-grip-lines pr-2"></i>
+
+                   </h3>
+               </div>
+           </div>
+       </div>
+   </section>
+
+<!------suggestion---- BOXXXXX ---------------->
+
+   <section>
+       <div class="container mt-4 mb-4">
+           <div class="row ">
+
+               <div id="carouselExampleControls" class="carousel slide col-lg-12" data-ride="carousel">
+                   <div class="carousel-inner slider-height">
+                       <div class="carousel-item active">
+                           <div class="col-lg 12 col-sm-12 slide-display">
+                               <div class="col-lg-4 col-sm-12 box-space">
+                                   <a href="#" class="card  box-style">
+                                       <img src="img/Tours.jpg"  class="card-img-top box-img" alt="...">
+                                       <div class="card-body box-text text-center">
+                                           <h5>هتل جهانگردی داران</h5>
+                                           <span>
+                           <i class="fas fa-star"></i>
+                           شروع قیمت از 1.9 میلیون تومان
+                       </span>
+                                       </div>
+                                       <div class="shop-tag">
+                                           <div>
+                                               <span>تخفیف</span>
+                                               <span>10%</span>
+
+                                           </div>
+
+                                       </div>
+
+                                   </a>
+
+                               </div>
+                               <div class="col-lg-4 col-sm-12 box-space">
+                                   <a href="#" class="card  box-style">
+                                       <img src="img/Tours.jpg"  class="card-img-top box-img" alt="...">
+                                       <div class="card-body box-text text-center">
+                                           <h5>هتل جهانگردی داران</h5>
+                                           <span>
+                           <i class="fas fa-star"></i>
+                           شروع قیمت از 1.9 میلیون تومان
+                       </span>
+                                       </div>
+                                   </a>
+
+                               </div>
+                               <div class="col-lg-4 col-sm-12 box-space">
+                                   <a href="#" class="card  box-style">
+                                       <img src="img/Tours.jpg"  class="card-img-top box-img" alt="...">
+                                       <div class="card-body box-text text-center">
+                                           <h5>هتل جهانگردی داران</h5>
+                                           <span>
+                           <i class="fas fa-star"></i>
+                           شروع قیمت از 1.9 میلیون تومان
+                       </span>
+                                       </div>
+                                   </a>
+
+                               </div>
+                           </div>
+                       </div>
+
+                       <div class="carousel-item">
+                           <div class="col-lg-12 col-sm-12 slide-display">
+                               <div class="col-lg-4 col-sm-12 box-space">
+                                   <a href="#" class="card  box-style">
+                                       <img src="img/news.jpg"  class="card-img-top box-img" alt="...">
+                                       <div class="card-body box-text text-center">
+                                           <h5>هتل جهانگردی داران</h5>
+                                           <span>
+                           <i class="fas fa-star"></i>
+                           شروع قیمت از 1.9 میلیون تومان
+                       </span>
+                                       </div>
+                                   </a>
+
+                               </div>
+                               <div class="col-lg-4 col-sm-12 box-space">
+                                   <a href="#" class="card  box-style">
+                                       <img src="img/Tours.jpg"  class="card-img-top box-img" alt="...">
+                                       <div class="card-body box-text text-center">
+                                           <h5>هتل جهانگردی داران</h5>
+                                           <span>
+                           <i class="fas fa-star"></i>
+                           شروع قیمت از 1.9 میلیون تومان
+                       </span>
+                                       </div>
+                                   </a>
+
+                               </div>
+                               <div class="col-lg-4 col-sm-12 box-space">
+                                   <a href="#" class="card  box-style">
+                                       <img src="img/Tours.jpg"  class="card-img-top box-img" alt="...">
+                                       <div class="card-body box-text text-center">
+                                           <h5>هتل جهانگردی داران</h5>
+                                           <span>
+                           <i class="fas fa-star"></i>
+                           شروع قیمت از 1.9 میلیون تومان
+                       </span>
+                                       </div>
+                                   </a>
+
+                               </div>
+                           </div>
+                       </div>
+
+
+
+                   </div>
+                   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                       <i class="fas fa-chevron-left carousel-control-prev-icon arrow-left" aria-hidden="true"></i>
+                       <span class="sr-only">Previous</span>
+                   </a>
+                   <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                       <i class="fas fa-chevron-right carousel-control-next-icon arrow-right" aria-hidden="true"></i>
+                       <span class="sr-only">Next</span>
+                   </a>
+               </div>
+
+           </div>
+       </div>
+   </section>
+
+
+
+
+   <!--start video-->
+
+   <section>
+       <div class="container mb-4" >
+           <div class="row" >
+               <div class="col-lg-12">
+                   <video style="height: 100% !important;" controls loop >
+                       <source type="video/mp4" src="video/alice.mp4">
+                       <source type="video/ogv" src="video/alice.ogv">
+                       <source type="video/webm" src="video/alice.webm">
+                   </video>
+               </div>
+           </div>
+       </div>
+   </section>
+
+
+   <!--box---- and----image-->
+
+   <section>
+       <div class="container mt-5">
+           <div class="row">
+               <div class="col-sm-12 col-lg-6 mb-4">
+                   <div>
+                       <h3 class="text-center title" >
+                           <i class="fas fa-grip-lines pl-2"></i>
+                           اخبار و رویدادها
+                           <i class="fas fa-grip-lines pr-2"></i>
+
+                       </h3>
+
+                   </div>
+                       <div class="list-group list-shadow mt-4">
+                           <a href="#" class="list-group-item list-group-item-action list-style text-right">مناقصه اقلام مصرفی هتل - نوبت دوم
+                           <i class="fas fa-chevron-left"></i>
+                           </a>
+                           <a href="#" class="list-group-item list-group-item-action list-style text-right">مناقصه اقلام مصرفی هتل - نوبت دوم
+                               <i class="fas fa-chevron-left"></i>
+                           </a>
+                           <a href="#" class="list-group-item list-group-item-action list-style text-right">مناقصه اقلام مصرفی هتل - نوبت دوم
+                               <i class="fas fa-chevron-left"></i>
+                           </a>
+                           <a href="#" class="list-group-item list-group-item-action list-style text-right">مناقصه اقلام مصرفی هتل - نوبت دوم
+                               <i class="fas fa-chevron-left"></i>
+                           </a>
+                           <a href="#" class="list-group-item list-group-item-action list-style text-right">مناقصه اقلام مصرفی هتل - نوبت دوم
+                               <i class="fas fa-chevron-left"></i>
+                           </a>
+                           <a href="#" class="list-group-item list-group-item-action list-style text-right">مناقصه اقلام مصرفی هتل - نوبت دوم
+                               <i class="fas fa-chevron-left"></i>
+                           </a>
+                       </div>
+               </div>
+
+
+               <div class="col-lg-6 col-sm-12">
+                   <div>
+                       <h3 class="text-center title" >
+                           <i class="fas fa-grip-lines pl-2"></i>
+                           تورهای گردشگری
+                           <i class="fas fa-grip-lines pr-2"></i>
+
+                       </h3>
+
+                   </div>
+
+                   <a href="#" class="tours-img">
+                       <img class="mt-3" src="img/Tours.jpg" width="100%" style="max-height: 270px">
+                       <div class="img-box-title">
+                           تور دو روزه شماره 1
+                       </div>
+                   </a>
+
+               </div>
+
+           </div>
+       </div>
+   </section>
+
+
+   <!------events---- TITLE ---------------->
+
+   <section>
+       <div class="container mt-5 mb-4">
+           <div class="row">
+               <div class="col-sm-12 col-lg-12">
+                   <h3 class="text-center title" >
+                       <i class="fas fa-grip-lines pl-2"></i>
+                      اخبار و رویدادها
+                       <i class="fas fa-grip-lines pr-2"></i>
+
+                   </h3>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!------events----- BOXs ---------------->
+
+   <section>
+       <div class="container mt-4 mb-4">
+           <div class="row ">
+
+                <div class="col-lg-4 col-sm-12 box-space">
+                                   <a href="#" class="card  box-style">
+                                       <img src="img/news.jpg"  class="card-img-top box-img" alt="...">
+                                       <div class="card-body box-text text-right">
+                                           <h5>لورم ایپسوم؟</h5>
+                                           <p class="text-justify">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه مجله در ستون و سطر آنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته.</p>
+                                       </div>
+                                   </a>
+
+                               </div>
+                <div class="col-lg-4 col-sm-12 box-space">
+                                   <a href="#" class="card  box-style">
+                                       <img src="img/Tours.jpg"  class="card-img-top box-img" alt="...">
+                                       <div class="card-body box-text text-right">
+                                           <h5>لورم ایپسوم؟</h5>
+                                           <p class="text-justify">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه مجله در ستون و سطر آنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته.</p>
+                                       </div>
+                                   </a>
+
+                               </div>
+                <div class="col-lg-4 col-sm-12 box-space">
+                   <a href="#" class="card  box-style">
+                       <img src="img/news.jpg"  class="card-img-top box-img" alt="...">
+                       <div class="card-body box-text text-right">
+                           <h5>لورم ایپسوم؟</h5>
+                           <p class="text-justify">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه مجله در ستون و سطر آنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته.</p>
+                       </div>
+                   </a>
+
+               </div>
+
+           </div>
+       </div>
+   </section>
+
+
+   <!------events------ BTN ---------------->
+
+   <section>
+       <div class="container">
+           <div class="row">
+               <div class="col-sm-12 col-lg-12 d-flex justify-content-center mb-2">
+                   <a class="btn btn-more"> مقالات بیشتر</a>
+
+               </div>
+           </div>
+       </div>
+   </section>
+
+
+
+   <!--start footer-->
+   <footer class="mt-4">
+       <div class="footer-image">
+
+           <div class="layer">
+               <div class="container">
+                   <div class="row">
+                       <div class="col-lg-6 col-sm-12 col-12" style="display: flex; justify-content: center; flex-direction: column;">
+                           <div class="boxfooter flex-container" >
+                               <div class="flex1">
+                                   <div style="font-size: 20px; color: white!important;">دسترسی سریع</div>
+                                 <a href="#">معرفی شرکت</a>
+                                 <a href="#">معاونین و مدیران</a>
+                                  <a href="#">تورهای مسافرتی</a>
+                               </div>
+
+                               <div class="flex2">
+                                   <a href="#">اخبار و رویدادها</a>
+                                   <a href="Hotel-list.html">لیست هتل ها</a>
+                                   <a href="about-us.html">تماس با ما</a>
+                               </div>
+
+                               <div class="flex2">
+                                   <a href="#">اعضای هیت مدیره</a>
+                                   <a href="#">پکیج های نوروزی</a>
+                                   <a href="#">آخرین آفرها</a>
+                               </div>
+                           </div>
+                       </div>
+
+                       <div class="col-lg-2 col-sm-4 col-4">
+                           <div class="boxfooter b1">
+                               <div style=" padding-top: 8vh!important; color: rgb(211, 211, 211)">نماد الکترونیکی</div>
+                               <!--     <div class="namadimg"></div> -->
+                               <img src="img/namad.png" class="namad">
+                           </div>
+                       </div>
+
+                       <div class="col-lg-4 col-sm-8 col-8">
+                           <div class="boxfooter">
+                               <img src="img/logo-footer.png" class="logofooter">
+
+                               <div class="address"><i class="fa fa-map-marker" aria-hidden="true"></i>تهران،خیابان،ولیعصر،روبروی،توانیر،کوچه شمس،پلاک3</div>
+                               <div class="email"><i class="fa fa-envelope" aria-hidden="true"></i>info@ittic.com</div>
+                               <div class="contact"><i class="fa fa-phone" aria-hidden="true"></i>021 -82497</div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="container lastline">
+                   <div class="row">
+                       <div class="layer card text-center lastline1">
+                           <div class="card text-center lastline1">
+                               <div class="card-footer text-muted demofooter">
+                                   همه حقوق این سایت متعلق به شرکت سرمایه گذاری ایرانگردی و جهانگردی میباشد | <span><a href="#">شرایط استفاده</a></span> |  <span><a href="#">حریم خصوصی</a></span>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+
+
+               </div>
+           </div>
+       </div>
+   </footer>
+   <!--end footer-->
+
+
+
+
+
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="js/jquery-1.11.2.min.js"></script>
+   <script src="js/bootstrap.js" ></script>
+   <!--Start script for calendar-->
+   <script src="js/jquery-1.10.1.min.js"></script>
+   <script src="js/persianDatepicker.js"></script>
+
+   <script>
+       $(function () {
+           //usage
+           $(".usage").persianDatepicker();
+           //startDate & endDate
+           $("#pdpStartEnd").persianDatepicker({ startDate: "1394/11/12", endDate: "1395/5/5" });
+           $("#pdpStartToday").persianDatepicker({ startDate: "today", endDate: "1395/5/5" });
+           $("#pdpEndToday").persianDatepicker({ startDate: "1393/11/12", endDate: "today" });
+       });
+
+   </script>
+   <!--End script for calendar-->
+    </body>
+</html>

@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/bootstrap-rtl.css" >
+    <link rel="stylesheet" href="css/fontiran.css" >
+    <link rel="stylesheet" href="css/all.min.css" >
+    <!--Start link for calendar-->
+    <link href='css/normalizecalendar.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/persianDatepicker-default.css" />
+    <link href="css/stylecalendar.css" rel="stylesheet" />
+    <!--End link for calendar-->
+    <script src="js/modernizr.js"></script>
+    <link rel="stylesheet" href="css/style.css" >
+
+    <!--Start link and favicon-->
+    <title>گروه هتل های ایرانگردی و جهانگردی</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <!--End link and favicon-->
+</head>
+
+  <body dir="rtl" >
+   
+   <!--HEAAAADERRRRRR-->
+   <header class="mt-2">
+       <div class="container">
+
+           <div class="row">
+
+               <nav class="navbar navbar-expand-lg navbar-light bg-dark p-0 menu">
+
+                   <div class="col-lg-2 col-sm-12 logo-pos">
+
+                       <a class="navbar-brand" href="index.html">
+                           <img class="logo" src="img/logo.png" width="150" height="60" alt="">
+                       </a>
+
+                   </div>
+
+                   <div class="col-lg-10 col-sm-12">
+
+                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                       </button>
+
+                       <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                           <ul class="navbar-nav  pr-0">
+                               <li class="nav-item active">
+                                   <a class="nav-link" href="index.html">صفحه اصلی <span class="sr-only">(current)</span></a>
+                               </li>
+                               <li class="nav-item">
+                                   <a class="nav-link" href="Hotel-list.html">هتل های ما</a>
+                               </li>
+                               <li class="nav-item">
+                                   <a class="nav-link" href="#">درباره ما</a>
+                               </li>
+                               <li class="nav-item">
+                                   <a class="nav-link" href="#">اخبار و رویداد ها</a>
+                               </li>
+                               <li class="nav-item">
+                                   <a class="nav-link" href="#">جاذبه های گردشگری</a>
+                               </li>
+                               <li class="nav-item">
+                                   <a class="nav-link" href="#">تورهای مسافرتی</a>
+                               </li>
+                               <li class="nav-item">
+                                   <a class="nav-link" href="about-us.html">ارتباط با ما</a>
+                               </li>
+                           </ul>
+
+                           <div class="phone mr-auto">
+
+                               <span>021-5678</span>
+                               <i class="fas fa-phone"></i>
+
+                           </div>
+
+                       </div>
+
+                   </div>
+               </nav>
+
+
+           </div>
+
+       </div>
+   </header>
+
+
+
+    <!------Background & BTN---------------->
+    <section class="bg">
+                   <div class="container btn-pos">
+                       <div class="col-lg-12  col-sm-12">
+                           <div class="btn-location">
+                               <button type="button" class="btn rounded reserve">
+                               <i class="fas fa-angle-right"></i>
+                       پیگیری رزرو
+                               </button>
+                               <button type="button" class="btn rounded worker ">بازنشستگان</button>
+                           </div>
+                       </div>
+                   </div>
+    </section>
+
+
+
+    <!------Payment title progress---------------->
+   <section>
+       <div class="container box-pos">
+           <div class="row rounded box about-box p-0" >
+               <div class="col-lg-6 col-sm-6 payment-process bar1">تکمیل اطلاعات</div>
+               <div class="col-lg-6 col-sm-6 payment-process bar2">تکمیل رزرو</div>
+           </div>
+       </div>
+
+       <div class="container mt-4">
+           <div class="row">
+               <div class="col-lg-4 col-md-12 col-sm-12">
+                   <div class="payment-form-box h-100">
+                       <div class="payment-form-title"> اطلاعات و مشخصات فردی</div>
+                       <form action="/action_page.php">
+                           <div class="about-form mb-2 payment-form">
+                                   <i class="fas fa-user"></i>
+                               <input type="text" name="name" placeholder="نام و تام خانوادگی">
+                           </div>
+                           <div class="about-form mb-2 payment-form">
+                                   <i class="fas fa-user"></i>
+                               <input type="text" name="name" placeholder="نام و تام خانوادگی">
+                           </div>
+                           <div class="about-form mb-2 payment-form">
+                                   <i class="fas fa-envelope"></i>
+                               <input type="email" name="email" placeholder="ایمیل">
+                           </div>
+                           <div class="about-form mb-2 payment-form">
+                                   <i class="fas fa-phone"></i>
+                               <input type="text" name="phone" placeholder="شماره تماس">
+                           </div>
+                       </form>
+
+                   </div>
+
+               </div>
+               <div class="col-lg-8 col-md-12 col-sm-12 pay-padding">
+                   <div class="payment-form-box text-center p-2">
+                       <table class="table table-borderless">
+                           <thead>
+                           <tr class="payment-rooms">
+                               <th scope="col"><span>شرح اتاق</span></th>
+                               <th scope="col"><span>مدت اقامات</span></th>
+                               <th scope="col"><span>نفرات</span></th>
+                               <th scope="col"><span>هزینه رزرو</span></th>
+                           </tr>
+                           </thead>
+                           <tbody class="rooms-table" >
+                           <tr>
+                               <th scope="row">اتاق نمونه</th>
+                               <td>سه شب</td>
+                               <td>دو نفر</td>
+                               <td>155،000 تومان</td>
+                           </tr>
+                           <tr>
+                               <th scope="row">اتاق نمونه</th>
+                               <td>سه شب</td>
+                               <td>دو نفر</td>
+                               <td>155،000 تومان</td>
+                           </tr>
+                           <tr>
+                               <th scope="row">اتاق نمونه</th>
+                               <td>سه شب</td>
+                               <td>دو نفر</td>
+                               <td>155،000 تومان</td>
+                           </tr>
+                           <tr>
+                               <th scope="row">اتاق نمونه</th>
+                               <td>سه شب</td>
+                               <td>دو نفر</td>
+                               <td>155،000 تومان</td>
+                           </tr>
+                           </tbody>
+                       </table>
+                       <div class="rooms-btn-box">
+                           <a class="btn search-hotel">
+                               <i class="fas fa-plus"></i>
+                               افزودن اتاق بیشتر
+
+
+                           </a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+
+       <div class="container">
+           <div class="row">
+               <div class="col-lg-12">
+                   <div class="d-flex payment-code mt-3">
+                       <div class="payment-code-input">
+                           <i class="fas fa-gift"></i>
+                           <input type="text" name="name" placeholder="کد تخفیف را وارد کنید.">
+                       </div>
+                       <div class="payment-code-btn">
+                           <a class="btn">اعمال کد تخفیف</a>
+
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+
+       <div class="container mt-5 mb-4">
+            <div class="col-sm-12">
+               <div class="mb-3" >
+                       <h3 class="text-center title" >
+                           <i class="fas fa-grip-lines pl-2"></i>
+                           شیوه پرداخت
+                           <i class="fas fa-grip-lines pr-2"></i>
+
+                       </h3>
+                   </div>
+            </div>
+       </div>
+
+       <div class="container">
+           <div class="row">
+               <div class="col-lg-6 col-sm-12">
+                       <div class="payment-form-box p-4  h-100">
+                           <div class="d-flex justify-content-between">
+                               <div class="form-check payment-bank mb-3 w-75">
+                                   <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                   <img src="img/zarin.png">
+                                   <label class="form-check-label" for="exampleRadios1">
+                                       درگاه پرداخت زرین پال
+                                   </label>
+                               </div>
+                               <div class="w-25"><span class="bank-info">کارمزد 2%</span></div>
+                           </div>
+
+                           <div class="d-flex justify-content-between">
+                               <div class="form-check payment-bank mb-3 w-75">
+                                   <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option2">
+                                   <img src="img/saman.png">
+                                   <label class="form-check-label" for="exampleRadios3">
+                                       درگاه پرداخت بانک سامان
+                                   </label>
+                               </div>
+                               <div class="w-25"><span class="bank-info"> بدون کارمزد</span></div>
+                           </div>
+
+                           <div class="d-flex justify-content-between">
+                               <div class="form-check payment-bank w-75">
+                                   <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                   <img src="img/melat.png">
+                                   <label class="form-check-label" for="exampleRadios2">
+                                       درگاه پرداخت بانک ملت
+                                   </label>
+                               </div>
+                               <div class="w-25"><span class="bank-info"> بدون کارمزد</span></div>
+                           </div>
+                       </div>
+               </div>
+               <div class="col-lg-6 col-sm-12 pay-padding">
+                   <div class="payment-form-box p-4">
+                       <div class="cash-payment">پرداخت غیر آنلاین</div>
+                       <div class="cash-card">
+                           <span class="mb-1 mt-2">بانک پارسیان ، به نام محمـد هــادی مبــینِی</span>
+                           <span class="mb-1">شماره حساب :  5-1436143-800</span>
+                           <span class="mb-1">شماره کارت : 6732-7637-0610-6221</span>
+                           <span class="mb-3">شماره شبا : IR590540106680001436143005</span>
+                       </div>
+                       <div class=" text-justify">
+                           <p style="font-size: 0.8rem"> خواهشمند است پس از انتقال وجه ، جزئیات پرداخت را در همان روز از طریق سیستم پشتیبانی گزارش فرموده و از کامل شدن عملیات پرداخت و تسویه فاکتور مربوطه اطمینان حاصل فرمائید</p>
+                       </div>
+                   </div>
+
+               </div>
+           </div>
+       </div>
+
+       <div class="container">
+           <div class="row pt-3">
+               <div class="col-lg-8 col-sm-8">
+                   <div class="payment-rules">
+                       <input type="checkbox" name="roules">
+                       <label>تمامی <span>قوانین سایت</span> را مطالعه کرده و همه آنها را میپذیرم</label>
+                   </div>
+               </div>
+               <div class="col-lg-4 col-sm-4">
+                   <div>
+                       <a class="btn payment-reserve">رزرو هتل</a>
+                   </div>
+                </div>
+           </div>
+
+       </div>
+   </section>
+
+
+
+
+
+
+   <!--start footer-->
+   <footer class="mt-4">
+       <div class="footer-image">
+
+           <div class="layer">
+               <div class="container">
+                   <div class="row">
+                       <div class="col-lg-6 col-sm-12 col-12" style="display: flex; justify-content: center; flex-direction: column;">
+                           <div class="boxfooter flex-container" >
+                               <div class="flex1">
+                                   <div style="font-size: 20px; color: white!important;">دسترسی سریع</div>
+                                   <a href="#">معرفی شرکت</a>
+                                   <a href="#">معاونین و مدیران</a>
+                                   <a href="#">تورهای مسافرتی</a>
+                               </div>
+
+                               <div class="flex2">
+                                   <a href="#">اخبار و رویدادها</a>
+                                   <a href="Hotel-list.html">لیست هتل ها</a>
+                                   <a href="about-us.html">تماس با ما</a>
+                               </div>
+
+                               <div class="flex2">
+                                   <a href="#">اعضای هیت مدیره</a>
+                                   <a href="#">پکیج های نوروزی</a>
+                                   <a href="#">آخرین آفرها</a>
+                               </div>
+                           </div>
+                       </div>
+
+                       <div class="col-lg-2 col-sm-4 col-4">
+                           <div class="boxfooter b1">
+                               <div style=" padding-top: 8vh!important; color: rgb(211, 211, 211)">نماد الکترونیکی</div>
+                               <!--     <div class="namadimg"></div> -->
+                               <img src="img/namad.png" class="namad">
+                           </div>
+                       </div>
+
+                       <div class="col-lg-4 col-sm-8 col-8">
+                           <div class="boxfooter">
+                               <img src="img/logo-footer.png" class="logofooter">
+
+                               <div class="address"><i class="fa fa-map-marker" aria-hidden="true"></i>تهران،خیابان،ولیعصر،روبروی،توانیر،کوچه شمس،پلاک3</div>
+                               <div class="email"><i class="fa fa-envelope" aria-hidden="true"></i>info@ittic.com</div>
+                               <div class="contact"><i class="fa fa-phone" aria-hidden="true"></i>021 -82497</div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="container lastline">
+                   <div class="row">
+                       <div class="layer card text-center lastline1">
+                           <div class="card text-center lastline1">
+                               <div class="card-footer text-muted demofooter">
+                                   همه حقوق این سایت متعلق به شرکت سرمایه گذاری ایرانگردی و جهانگردی میباشد | <span><a href="#">شرایط استفاده</a></span> |  <span><a href="#">حریم خصوصی</a></span>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+
+               </div>
+           </div>
+       </div>
+   </footer>
+   <!--end footer-->
+
+
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="js/jquery-1.11.2.min.js"></script>
+   <script src="js/bootstrap.js" ></script>
+   <!--Start script for calendar-->
+   <script src="js/jquery-1.10.1.min.js"></script>
+   <script src="js/persianDatepicker.js"></script>
+
+   <script>
+       $(function () {
+           //usage
+           $(".usage").persianDatepicker();
+           //startDate & endDate
+           $("#pdpStartEnd").persianDatepicker({ startDate: "1394/11/12", endDate: "1395/5/5" });
+           $("#pdpStartToday").persianDatepicker({ startDate: "today", endDate: "1395/5/5" });
+           $("#pdpEndToday").persianDatepicker({ startDate: "1393/11/12", endDate: "today" });
+       });
+
+   </script>
+   <!--End script for calendar-->
+    </body>
+
+</html>

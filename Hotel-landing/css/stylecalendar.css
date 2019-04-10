@@ -1,0 +1,29 @@
+html {
+  font-size: 16px;
+}
+
+
+input[type="text"]{
+    padding: 5px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+}
+
+
+
+
+
+
+/* Medium devices (desktops)
+==========================*/
+@media (min-width: 992px) {
+
+  body {
+    overflow-y: scroll;
+  }
+
+}
+
+
+
+

@@ -1,0 +1,1006 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/bootstrap-rtl.css" >
+    <link rel="stylesheet" href="css/fontiran.css" >
+    <link rel="stylesheet" href="css/all.min.css" >
+    <!--Start link for calendar-->
+    <link href='css/normalizecalendar.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/persianDatepicker-default.css" />
+    <link href="css/stylecalendar.css" rel="stylesheet" />
+    <!--End link for calendar-->
+    <script src="js/modernizr.js"></script>
+    <link rel="stylesheet" href="css/style.css" >
+
+    <!--Start link and favicon-->
+    <title>گروه هتل های ایرانگردی و جهانگردی</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <!--End link and favicon-->
+</head>
+
+  <body dir="rtl">
+
+
+    <!--start of header-->
+    <header class="mt-2">
+              <div class="container">
+
+                  <div class="row">
+
+                      <nav class="navbar navbar-expand-lg navbar-light bg-dark p-0 menu">
+
+                          <div class="col-lg-2 col-sm-12 logo-pos">
+
+                              <a class="navbar-brand" href="index.html">
+                                  <img class="logo" src="img/logo.png" width="150" height="60" alt="">
+                              </a>
+
+                          </div>
+
+                          <div class="col-lg-10 col-sm-12">
+
+                              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                  <span class="navbar-toggler-icon"></span>
+                              </button>
+
+                              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                                  <ul class="navbar-nav  pr-0">
+                                      <li class="nav-item active">
+                                          <a class="nav-link" href="index.html">صفحه اصلی <span class="sr-only">(current)</span></a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="Hotel-list.html">هتل های ما</a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="#">درباره ما</a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="#">اخبار و رویداد ها</a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="#">جاذبه های گردشگری</a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="#">تورهای مسافرتی</a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="about-us.html">ارتباط با ما</a>
+                                      </li>
+                                  </ul>
+
+                                  <div class="phone mr-auto">
+
+                                      <span>021-5678</span>
+                                      <i class="fas fa-phone"></i>
+
+                                  </div>
+
+                              </div>
+
+                          </div>
+                      </nav>
+
+
+                  </div>
+
+              </div>
+          </header>
+    <!--End of header-->
+
+    <!------ Start Background & BTN---------------->
+    <section class="bg">
+        <div class="container btn-pos">
+            <div class="col-lg-12  col-sm-12">
+                <div class="btn-location">
+                    <button type="button" class="btn rounded reserve">
+                    <i class="fas fa-angle-right"></i>
+            پیگیری رزرو
+                    </button>
+                    <button type="button" class="btn rounded worker ">بازنشستگان</button>
+                </div>
+            </div>
+        </div>
+</section>
+
+    <!--start section-->
+    <section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-sm-12">
+        <div>
+          <form class="list-form" action="/action_page.php" method="GET">
+            <label>مقصد مورد نظر</label>
+              <div >
+                  <i style="color: gainsboro" class="fa fa-location-arrow location-icon" aria-hidden="true"></i>
+                  <input list="cities" type="text" value="" placeholder="قصد اقامت در چه شهری را دارید؟">
+              </div>
+            <datalist  id="cities" >
+                <option value="تهران ">
+                <option value="گیلان">
+                <option value="آذربایجان شرقی">
+                <option value="خوزستان">
+                <option value="فارس">
+                <option value="اصفهان">
+                <option value="خراسان رضوی">
+                <option value="قزوین">
+                <option value="سمنان">
+                <option value="قم">
+                <option value="زنجان">
+                <option value="مازندران">
+                <option value="گلستان">
+                <option value="اردبیل">
+                <option value="آذربایجان غربی">
+                <option value="همدان">
+                <option value="کردستان">
+                <option value="کرمانشاه">
+                <option value="لرستان">
+                <option value="بوشهر">
+                <option value="کرمان">
+                <option value="هرمزگان">
+                <option value="چهارمحال و بختیاری">
+                <option value="یزد">
+                <option value="سیستان و بلوچستان">
+                <option value="ایلام">
+                <option value="کهگلویه و بویراحمد">
+                <option value="خراسان شمالی">
+                <option value="خراسان جنوبی">
+                <option value="البرز">
+            </datalist>
+  
+            <label>از تاریخ</label>
+              <div>
+                  <i style="color: gainsboro" class="fa fa-calendar" aria-hidden="true"></i>
+                  <input type="text" placeholder="تاریخ ورود" class="usage">
+              </div>
+
+            <label>به مدت</label>
+              <div>
+                  <i style="color: gainsboro" class="fa fa-calendar" aria-hidden="true"></i>
+                  <input list="nights" type="text" value="" placeholder="مدت زمان اقامت">
+              </div>
+
+            <datalist  id="nights" >
+                <option value="یک شب ">
+                <option value="دو شب ">
+                <option value="سه شب ">
+                <option value="چهار شب ">
+                <option value="پنج شب ">
+                <option value="شش شب ">
+                 <option value="هفت شب ">
+                <option value="هشت شب ">
+                <option value="نه شب ">
+                <option value="ده شب ">
+            </datalist>
+                      <a  class="btn btnreserve about-btn">جستجو کنید</a>
+          </form>
+        </div>
+      </div>
+  
+      <div class="col-lg-8 col-sm-12 ">
+
+         <div class=" listflex pb-5 " >
+
+             <div class="boxlistflex white box-pos1">
+                 <div class=" lb1 rounded-right"></div>
+                 <div class=" lb2">
+                     <div class="d-flex">
+                         <div class="infolist">
+                             <div><i class="fa fa-bed" aria-hidden="true"></i>تعداد تخت  3تا</div>
+                             <div><i class="fa fa-male person" aria-hidden="true"></i>ظرفیت 3 نفر</div>
+                             <div><i class="fa fa-coffee food" aria-hidden="true"></i>صبحانه دارد</div>
+                         </div>
+
+                         <div class="infolist">
+                             <div><i style="font-size:15px" class="fa money">&#xf0d6;</i>قیمت 180000 تومان</div>
+                             <div><i style="font-size:15px" class="fa sun">&#xf185;</i>
+                                 روزها 3 شب</div>
+                             <a class="text-right" style="font-size: 10px;" href="#">اطلاعات بیشتر<i class="fa fa-arrow-left " aria-hidden="true"></i></a>
+
+                         </div>
+                     </div>
+                     <a class="btn about-btn m-auto">رزرو اتاق</a>
+
+
+                 </div>
+             </div>
+
+             <div class="boxlistflex white box-pos1">
+                 <div class=" lb1 rounded-right"></div>
+                 <div class=" lb2">
+                     <div class="d-flex">
+                         <div class="infolist">
+                             <div><i class="fa fa-bed" aria-hidden="true"></i>تعداد تخت  3تا</div>
+                             <div><i class="fa fa-male person" aria-hidden="true"></i>ظرفیت 3 نفر</div>
+                             <div><i class="fa fa-coffee food" aria-hidden="true"></i>صبحانه دارد</div>
+                         </div>
+
+                         <div class="infolist">
+                             <div><i style="font-size:15px" class="fa money">&#xf0d6;</i>قیمت 180000 تومان</div>
+                             <div><i style="font-size:15px" class="fa sun">&#xf185;</i>
+                                 روزها 3 شب</div>
+                             <a style="font-size: 10px;" href="#">اطلاعات بیشتر<i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+
+                         </div>
+                     </div>
+                     <a class="btn about-btn m-auto">رزرو اتاق</a>
+
+
+                 </div>
+             </div>
+
+             <div class="boxlistflex white box-pos1">
+                 <div class=" lb1 rounded-right"></div>
+                 <div class=" lb2">
+                     <div class="d-flex">
+                         <div class="infolist">
+                             <div><i class="fa fa-bed" aria-hidden="true"></i>تعداد تخت  3تا</div>
+                             <div><i class="fa fa-male person" aria-hidden="true"></i>ظرفیت 3 نفر</div>
+                             <div><i class="fa fa-coffee food" aria-hidden="true"></i>صبحانه دارد</div>
+                         </div>
+
+                         <div class="infolist">
+                             <div><i style="font-size:15px" class="fa money">&#xf0d6;</i>قیمت 180000 تومان</div>
+                             <div><i style="font-size:15px" class="fa sun">&#xf185;</i>
+                                 روزها 3 شب</div>
+                             <a class="text-right" style="font-size: 10px;" href="#">اطلاعات بیشتر<i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+
+                         </div>
+                     </div>
+                     <a class="btn about-btn m-auto ">رزرو اتاق</a>
+
+
+                 </div>
+             </div>
+
+             <div class="boxlistflex white box-pos1">
+                 <div class=" lb3 rounded-right"></div>
+                 <div class=" lb2">
+                     <div class="d-flex">
+                         <div class="infolist">
+                             <div><i class="fa fa-bed" aria-hidden="true"></i>تعداد تخت  3تا</div>
+                             <div><i class="fa fa-male person" aria-hidden="true"></i>ظرفیت 3 نفر</div>
+                             <div><i class="fa fa-coffee food" aria-hidden="true"></i>صبحانه دارد</div>
+                         </div>
+
+                         <div class="infolist">
+                             <div><i style="font-size:15px" class="fa money">&#xf0d6;</i>قیمت 180000 تومان</div>
+                             <div><i style="font-size:15px" class="fa sun">&#xf185;</i>
+                                 روزها 3 شب</div>
+                             <a class="text-right" style="font-size: 10px;" href="#">اطلاعات بیشتر<i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+
+                         </div>
+                     </div>
+                     <a class="btn about-btn m-auto ">رزرو اتاق</a>
+
+
+                 </div>
+             </div>
+
+             <div class="boxlistflex white box-pos1">
+                 <div class=" lb1 rounded-right"></div>
+                 <div class=" lb2">
+                     <div class="d-flex">
+                         <div class="infolist">
+                             <div><i class="fa fa-bed" aria-hidden="true"></i>تعداد تخت  3تا</div>
+                             <div><i class="fa fa-male person" aria-hidden="true"></i>ظرفیت 3 نفر</div>
+                             <div><i class="fa fa-coffee food" aria-hidden="true"></i>صبحانه دارد</div>
+                         </div>
+
+                         <div class="infolist">
+                             <div><i style="font-size:15px" class="fa money">&#xf0d6;</i>قیمت 180000 تومان</div>
+                             <div><i style="font-size:15px" class="fa sun">&#xf185;</i>
+                                 روزها 3 شب</div>
+                             <a class="text-right" style="font-size: 10px;" href="#">اطلاعات بیشتر<i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+
+                         </div>
+                     </div>
+                     <a  class="btn about-btn m-auto ">رزرو اتاق</a>
+
+
+                 </div>
+             </div>
+
+             <div class="boxlistflex white box-pos1">
+                 <div class=" lb5 rounded-right"></div>
+                 <div class=" lb2">
+                     <div class="d-flex">
+                         <div class="infolist">
+                             <div><i class="fa fa-bed" aria-hidden="true"></i>تعداد تخت  3تا</div>
+                             <div><i class="fa fa-male person" aria-hidden="true"></i>ظرفیت 3 نفر</div>
+                             <div><i class="fa fa-coffee food" aria-hidden="true"></i>صبحانه دارد</div>
+                         </div>
+
+                         <div class="infolist">
+                             <div><i style="font-size:15px" class="fa money">&#xf0d6;</i>قیمت 180000 تومان</div>
+                             <div><i style="font-size:15px" class="fa sun">&#xf185;</i>
+                                 روزها 3 شب</div>
+                             <a class="text-right" style="font-size: 10px;" href="#">اطلاعات بیشتر<i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+
+                         </div>
+                     </div>
+
+                     <a class="btn about-btn m-auto ">رزرو اتاق</a>
+
+
+                 </div>
+             </div>
+
+             <div class="boxlistflex white box-pos1">
+                 <div class=" lb1 rounded-right"></div>
+                 <div class=" lb2">
+                     <div class="d-flex">
+                         <div class="infolist">
+                             <div><i class="fa fa-bed" aria-hidden="true"></i>تعداد تخت  3تا</div>
+                             <div><i class="fa fa-male person" aria-hidden="true"></i>ظرفیت 3 نفر</div>
+                             <div><i class="fa fa-coffee food" aria-hidden="true"></i>صبحانه دارد</div>
+                         </div>
+
+                         <div class="infolist">
+                             <div><i style="font-size:15px" class="fa money">&#xf0d6;</i>قیمت 180000 تومان</div>
+                             <div><i style="font-size:15px" class="fa sun">&#xf185;</i>
+                                 روزها 3 شب</div>
+                             <a class="text-right" style="font-size: 10px;" href="#">اطلاعات بیشتر<i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+
+                         </div>
+                     </div>
+                     <a class="btn about-btn m-auto ">رزرو اتاق</a>
+
+
+                 </div>
+             </div>
+
+
+         </div>
+         <div class=" listflex pb-5" >
+
+             <div class="boxlistflex white box-pos1">
+                 <div class=" lb5 rounded-right"></div>
+                 <div class=" lb2">
+                     <div class="d-flex">
+                         <div class="infolist">
+                             <div><i class="fa fa-bed" aria-hidden="true"></i>تعداد تخت  3تا</div>
+                             <div><i class="fa fa-male person" aria-hidden="true"></i>ظرفیت 3 نفر</div>
+                             <div><i class="fa fa-coffee food" aria-hidden="true"></i>صبحانه دارد</div>
+                         </div>
+
+                         <div class="infolist">
+                             <div><i style="font-size:15px" class="fa money">&#xf0d6;</i>قیمت 180000 تومان</div>
+                             <div><i style="font-size:15px" class="fa sun">&#xf185;</i>
+                                 روزها 3 شب</div>
+                             <a class="text-right" style="font-size: 10px;" href="#">اطلاعات بیشتر<i class="fa fa-arrow-left " aria-hidden="true"></i></a>
+
+                         </div>
+                     </div>
+                     <a class="btn about-btn m-auto">رزرو اتاق</a>
+
+
+                 </div>
+             </div>
+
+             <div class="boxlistflex white box-pos1">
+                 <div class=" lb1 rounded-right"></div>
+                 <div class=" lb2">
+                     <div class="d-flex">
+                         <div class="infolist">
+                             <div><i class="fa fa-bed" aria-hidden="true"></i>تعداد تخت  3تا</div>
+                             <div><i class="fa fa-male person" aria-hidden="true"></i>ظرفیت 3 نفر</div>
+                             <div><i class="fa fa-coffee food" aria-hidden="true"></i>صبحانه دارد</div>
+                         </div>
+
+                         <div class="infolist">
+                             <div><i style="font-size:15px" class="fa money">&#xf0d6;</i>قیمت 180000 تومان</div>
+                             <div><i style="font-size:15px" class="fa sun">&#xf185;</i>
+                                 روزها 3 شب</div>
+                             <a style="font-size: 10px;" href="#">اطلاعات بیشتر<i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+
+                         </div>
+                     </div>
+                     <a class="btn about-btn m-auto">رزرو اتاق</a>
+
+
+                 </div>
+             </div>
+
+             <div class="boxlistflex white box-pos1">
+                 <div class=" lb1 rounded-right"></div>
+                 <div class=" lb2">
+                     <div class="d-flex">
+                         <div class="infolist">
+                             <div><i class="fa fa-bed" aria-hidden="true"></i>تعداد تخت  3تا</div>
+                             <div><i class="fa fa-male person" aria-hidden="true"></i>ظرفیت 3 نفر</div>
+                             <div><i class="fa fa-coffee food" aria-hidden="true"></i>صبحانه دارد</div>
+                         </div>
+
+                         <div class="infolist">
+                             <div><i style="font-size:15px" class="fa money">&#xf0d6;</i>قیمت 180000 تومان</div>
+                             <div><i style="font-size:15px" class="fa sun">&#xf185;</i>
+                                 روزها 3 شب</div>
+                             <a class="text-right" style="font-size: 10px;" href="#">اطلاعات بیشتر<i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+
+                         </div>
+                     </div>
+                     <a class="btn about-btn m-auto ">رزرو اتاق</a>
+
+
+                 </div>
+             </div>
+
+             <div class="boxlistflex white box-pos1">
+                 <div class=" lb3 rounded-right"></div>
+                 <div class=" lb2">
+                     <div class="d-flex">
+                         <div class="infolist">
+                             <div><i class="fa fa-bed" aria-hidden="true"></i>تعداد تخت  3تا</div>
+                             <div><i class="fa fa-male person" aria-hidden="true"></i>ظرفیت 3 نفر</div>
+                             <div><i class="fa fa-coffee food" aria-hidden="true"></i>صبحانه دارد</div>
+                         </div>
+
+                         <div class="infolist">
+                             <div><i style="font-size:15px" class="fa money">&#xf0d6;</i>قیمت 180000 تومان</div>
+                             <div><i style="font-size:15px" class="fa sun">&#xf185;</i>
+                                 روزها 3 شب</div>
+                             <a class="text-right" style="font-size: 10px;" href="#">اطلاعات بیشتر<i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+
+                         </div>
+                     </div>
+                     <a class="btn about-btn m-auto ">رزرو اتاق</a>
+
+
+                 </div>
+             </div>
+
+             <div class="boxlistflex white box-pos1">
+                 <div class=" lb1 rounded-right"></div>
+                 <div class=" lb2">
+                     <div class="d-flex">
+                         <div class="infolist">
+                             <div><i class="fa fa-bed" aria-hidden="true"></i>تعداد تخت  3تا</div>
+                             <div><i class="fa fa-male person" aria-hidden="true"></i>ظرفیت 3 نفر</div>
+                             <div><i class="fa fa-coffee food" aria-hidden="true"></i>صبحانه دارد</div>
+                         </div>
+
+                         <div class="infolist">
+                             <div><i style="font-size:15px" class="fa money">&#xf0d6;</i>قیمت 180000 تومان</div>
+                             <div><i style="font-size:15px" class="fa sun">&#xf185;</i>
+                                 روزها 3 شب</div>
+                             <a class="text-right" style="font-size: 10px;" href="#">اطلاعات بیشتر<i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+
+                         </div>
+                     </div>
+                     <a  class="btn about-btn m-auto ">رزرو اتاق</a>
+
+
+                 </div>
+             </div>
+
+             <div class="boxlistflex white box-pos1">
+                 <div class=" lb5 rounded-right"></div>
+                 <div class=" lb2">
+                     <div class="d-flex">
+                         <div class="infolist">
+                             <div><i class="fa fa-bed" aria-hidden="true"></i>تعداد تخت  3تا</div>
+                             <div><i class="fa fa-male person" aria-hidden="true"></i>ظرفیت 3 نفر</div>
+                             <div><i class="fa fa-coffee food" aria-hidden="true"></i>صبحانه دارد</div>
+                         </div>
+
+                         <div class="infolist">
+                             <div><i style="font-size:15px" class="fa money">&#xf0d6;</i>قیمت 180000 تومان</div>
+                             <div><i style="font-size:15px" class="fa sun">&#xf185;</i>
+                                 روزها 3 شب</div>
+                             <a class="text-right" style="font-size: 10px;" href="#">اطلاعات بیشتر<i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+
+                         </div>
+                     </div>
+
+                     <a class="btn about-btn m-auto ">رزرو اتاق</a>
+
+
+                 </div>
+             </div>
+
+             <div class="boxlistflex white box-pos1">
+                 <div class=" lb1 rounded-right"></div>
+                 <div class=" lb2">
+                     <div class="d-flex">
+                         <div class="infolist">
+                             <div><i class="fa fa-bed" aria-hidden="true"></i>تعداد تخت  3تا</div>
+                             <div><i class="fa fa-male person" aria-hidden="true"></i>ظرفیت 3 نفر</div>
+                             <div><i class="fa fa-coffee food" aria-hidden="true"></i>صبحانه دارد</div>
+                         </div>
+
+                         <div class="infolist">
+                             <div><i style="font-size:15px" class="fa money">&#xf0d6;</i>قیمت 180000 تومان</div>
+                             <div><i style="font-size:15px" class="fa sun">&#xf185;</i>
+                                 روزها 3 شب</div>
+                             <a class="text-right" style="font-size: 10px;" href="#">اطلاعات بیشتر<i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+
+                         </div>
+                     </div>
+                     <a class="btn about-btn m-auto ">رزرو اتاق</a>
+
+
+                 </div>
+             </div>
+
+
+         </div>
+         <div class=" listflex pb-5 ">
+
+             <div class="boxlistflex white box-pos1">
+                 <div class=" lb1 rounded-right"></div>
+                 <div class=" lb2">
+                     <div class="d-flex">
+                         <div class="infolist">
+                             <div><i class="fa fa-bed" aria-hidden="true"></i>تعداد تخت  3تا</div>
+                             <div><i class="fa fa-male person" aria-hidden="true"></i>ظرفیت 3 نفر</div>
+                             <div><i class="fa fa-coffee food" aria-hidden="true"></i>صبحانه دارد</div>
+                         </div>
+
+                         <div class="infolist">
+                             <div><i style="font-size:15px" class="fa money">&#xf0d6;</i>قیمت 180000 تومان</div>
+                             <div><i style="font-size:15px" class="fa sun">&#xf185;</i>
+                                 روزها 3 شب</div>
+                             <a class="text-right" style="font-size: 10px;" href="#">اطلاعات بیشتر<i class="fa fa-arrow-left " aria-hidden="true"></i></a>
+
+                         </div>
+                     </div>
+                     <a class="btn about-btn m-auto">رزرو اتاق</a>
+
+
+                 </div>
+             </div>
+
+             <div class="boxlistflex white box-pos1">
+                 <div class=" lb1 rounded-right"></div>
+                 <div class=" lb2">
+                     <div class="d-flex">
+                         <div class="infolist">
+                             <div><i class="fa fa-bed" aria-hidden="true"></i>تعداد تخت  3تا</div>
+                             <div><i class="fa fa-male person" aria-hidden="true"></i>ظرفیت 3 نفر</div>
+                             <div><i class="fa fa-coffee food" aria-hidden="true"></i>صبحانه دارد</div>
+                         </div>
+
+                         <div class="infolist">
+                             <div><i style="font-size:15px" class="fa money">&#xf0d6;</i>قیمت 180000 تومان</div>
+                             <div><i style="font-size:15px" class="fa sun">&#xf185;</i>
+                                 روزها 3 شب</div>
+                             <a style="font-size: 10px;" href="#">اطلاعات بیشتر<i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+
+                         </div>
+                     </div>
+                     <a class="btn about-btn m-auto">رزرو اتاق</a>
+
+
+                 </div>
+             </div>
+
+             <div class="boxlistflex white box-pos1">
+                 <div class=" lb5 rounded-right"></div>
+                 <div class=" lb2">
+                     <div class="d-flex">
+                         <div class="infolist">
+                             <div><i class="fa fa-bed" aria-hidden="true"></i>تعداد تخت  3تا</div>
+                             <div><i class="fa fa-male person" aria-hidden="true"></i>ظرفیت 3 نفر</div>
+                             <div><i class="fa fa-coffee food" aria-hidden="true"></i>صبحانه دارد</div>
+                         </div>
+
+                         <div class="infolist">
+                             <div><i style="font-size:15px" class="fa money">&#xf0d6;</i>قیمت 180000 تومان</div>
+                             <div><i style="font-size:15px" class="fa sun">&#xf185;</i>
+                                 روزها 3 شب</div>
+                             <a class="text-right" style="font-size: 10px;" href="#">اطلاعات بیشتر<i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+
+                         </div>
+                     </div>
+                     <a class="btn about-btn m-auto ">رزرو اتاق</a>
+
+
+                 </div>
+             </div>
+
+             <div class="boxlistflex white box-pos1">
+                 <div class=" lb3 rounded-right"></div>
+                 <div class=" lb2">
+                     <div class="d-flex">
+                         <div class="infolist">
+                             <div><i class="fa fa-bed" aria-hidden="true"></i>تعداد تخت  3تا</div>
+                             <div><i class="fa fa-male person" aria-hidden="true"></i>ظرفیت 3 نفر</div>
+                             <div><i class="fa fa-coffee food" aria-hidden="true"></i>صبحانه دارد</div>
+                         </div>
+
+                         <div class="infolist">
+                             <div><i style="font-size:15px" class="fa money">&#xf0d6;</i>قیمت 180000 تومان</div>
+                             <div><i style="font-size:15px" class="fa sun">&#xf185;</i>
+                                 روزها 3 شب</div>
+                             <a class="text-right" style="font-size: 10px;" href="#">اطلاعات بیشتر<i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+
+                         </div>
+                     </div>
+                     <a class="btn about-btn m-auto ">رزرو اتاق</a>
+
+
+                 </div>
+             </div>
+
+             <div class="boxlistflex white box-pos1">
+                 <div class=" lb5 rounded-right"></div>
+                 <div class=" lb2">
+                     <div class="d-flex">
+                         <div class="infolist">
+                             <div><i class="fa fa-bed" aria-hidden="true"></i>تعداد تخت  3تا</div>
+                             <div><i class="fa fa-male person" aria-hidden="true"></i>ظرفیت 3 نفر</div>
+                             <div><i class="fa fa-coffee food" aria-hidden="true"></i>صبحانه دارد</div>
+                         </div>
+
+                         <div class="infolist">
+                             <div><i style="font-size:15px" class="fa money">&#xf0d6;</i>قیمت 180000 تومان</div>
+                             <div><i style="font-size:15px" class="fa sun">&#xf185;</i>
+                                 روزها 3 شب</div>
+                             <a class="text-right" style="font-size: 10px;" href="#">اطلاعات بیشتر<i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+
+                         </div>
+                     </div>
+                     <a  class="btn about-btn m-auto ">رزرو اتاق</a>
+
+
+                 </div>
+             </div>
+
+             <div class="boxlistflex white box-pos1">
+                 <div class=" lb5 rounded-right"></div>
+                 <div class=" lb2">
+                     <div class="d-flex">
+                         <div class="infolist">
+                             <div><i class="fa fa-bed" aria-hidden="true"></i>تعداد تخت  3تا</div>
+                             <div><i class="fa fa-male person" aria-hidden="true"></i>ظرفیت 3 نفر</div>
+                             <div><i class="fa fa-coffee food" aria-hidden="true"></i>صبحانه دارد</div>
+                         </div>
+
+                         <div class="infolist">
+                             <div><i style="font-size:15px" class="fa money">&#xf0d6;</i>قیمت 180000 تومان</div>
+                             <div><i style="font-size:15px" class="fa sun">&#xf185;</i>
+                                 روزها 3 شب</div>
+                             <a class="text-right" style="font-size: 10px;" href="#">اطلاعات بیشتر<i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+
+                         </div>
+                     </div>
+
+                     <a class="btn about-btn m-auto ">رزرو اتاق</a>
+
+
+                 </div>
+             </div>
+
+             <div class="boxlistflex white box-pos1">
+                 <div class=" lb1 rounded-right"></div>
+                 <div class=" lb2">
+                     <div class="d-flex">
+                         <div class="infolist">
+                             <div><i class="fa fa-bed" aria-hidden="true"></i>تعداد تخت  3تا</div>
+                             <div><i class="fa fa-male person" aria-hidden="true"></i>ظرفیت 3 نفر</div>
+                             <div><i class="fa fa-coffee food" aria-hidden="true"></i>صبحانه دارد</div>
+                         </div>
+
+                         <div class="infolist">
+                             <div><i style="font-size:15px" class="fa money">&#xf0d6;</i>قیمت 180000 تومان</div>
+                             <div><i style="font-size:15px" class="fa sun">&#xf185;</i>
+                                 روزها 3 شب</div>
+                             <a class="text-right" style="font-size: 10px;" href="#">اطلاعات بیشتر<i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+
+                         </div>
+                     </div>
+                     <a class="btn about-btn m-auto ">رزرو اتاق</a>
+
+
+                 </div>
+             </div>
+
+
+         </div>
+         <div class=" listflex pb-5">
+
+              <div class="boxlistflex white box-pos1">
+                  <div class=" lb5 rounded-right"></div>
+                  <div class=" lb2">
+                      <div class="d-flex">
+                          <div class="infolist">
+                              <div><i class="fa fa-bed" aria-hidden="true"></i>تعداد تخت  3تا</div>
+                              <div><i class="fa fa-male person" aria-hidden="true"></i>ظرفیت 3 نفر</div>
+                              <div><i class="fa fa-coffee food" aria-hidden="true"></i>صبحانه دارد</div>
+                          </div>
+
+                          <div class="infolist">
+                              <div><i style="font-size:15px" class="fa money">&#xf0d6;</i>قیمت 180000 تومان</div>
+                              <div><i style="font-size:15px" class="fa sun">&#xf185;</i>
+                                  روزها 3 شب</div>
+                              <a class="text-right" style="font-size: 10px;" href="#">اطلاعات بیشتر<i class="fa fa-arrow-left " aria-hidden="true"></i></a>
+
+                          </div>
+                      </div>
+                      <a class="btn about-btn m-auto">رزرو اتاق</a>
+
+
+                  </div>
+              </div>
+
+              <div class="boxlistflex white box-pos1">
+                  <div class=" lb1 rounded-right"></div>
+                  <div class=" lb2">
+                      <div class="d-flex">
+                          <div class="infolist">
+                              <div><i class="fa fa-bed" aria-hidden="true"></i>تعداد تخت  3تا</div>
+                              <div><i class="fa fa-male person" aria-hidden="true"></i>ظرفیت 3 نفر</div>
+                              <div><i class="fa fa-coffee food" aria-hidden="true"></i>صبحانه دارد</div>
+                          </div>
+
+                          <div class="infolist">
+                              <div><i style="font-size:15px" class="fa money">&#xf0d6;</i>قیمت 180000 تومان</div>
+                              <div><i style="font-size:15px" class="fa sun">&#xf185;</i>
+                                  روزها 3 شب</div>
+                              <a style="font-size: 10px;" href="#">اطلاعات بیشتر<i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+
+                          </div>
+                      </div>
+                      <a class="btn about-btn m-auto">رزرو اتاق</a>
+
+
+                  </div>
+              </div>
+
+              <div class="boxlistflex white box-pos1">
+                  <div class=" lb1 rounded-right"></div>
+                  <div class=" lb2">
+                      <div class="d-flex">
+                          <div class="infolist">
+                              <div><i class="fa fa-bed" aria-hidden="true"></i>تعداد تخت  3تا</div>
+                              <div><i class="fa fa-male person" aria-hidden="true"></i>ظرفیت 3 نفر</div>
+                              <div><i class="fa fa-coffee food" aria-hidden="true"></i>صبحانه دارد</div>
+                          </div>
+
+                          <div class="infolist">
+                              <div><i style="font-size:15px" class="fa money">&#xf0d6;</i>قیمت 180000 تومان</div>
+                              <div><i style="font-size:15px" class="fa sun">&#xf185;</i>
+                                  روزها 3 شب</div>
+                              <a class="text-right" style="font-size: 10px;" href="#">اطلاعات بیشتر<i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+
+                          </div>
+                      </div>
+                      <a class="btn about-btn m-auto ">رزرو اتاق</a>
+
+
+                  </div>
+              </div>
+
+              <div class="boxlistflex white box-pos1">
+                  <div class=" lb3 rounded-right"></div>
+                  <div class=" lb2">
+                      <div class="d-flex">
+                          <div class="infolist">
+                              <div><i class="fa fa-bed" aria-hidden="true"></i>تعداد تخت  3تا</div>
+                              <div><i class="fa fa-male person" aria-hidden="true"></i>ظرفیت 3 نفر</div>
+                              <div><i class="fa fa-coffee food" aria-hidden="true"></i>صبحانه دارد</div>
+                          </div>
+
+                          <div class="infolist">
+                              <div><i style="font-size:15px" class="fa money">&#xf0d6;</i>قیمت 180000 تومان</div>
+                              <div><i style="font-size:15px" class="fa sun">&#xf185;</i>
+                                  روزها 3 شب</div>
+                              <a class="text-right" style="font-size: 10px;" href="#">اطلاعات بیشتر<i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+
+                          </div>
+                      </div>
+                      <a class="btn about-btn m-auto ">رزرو اتاق</a>
+
+
+                  </div>
+              </div>
+
+              <div class="boxlistflex white box-pos1">
+                  <div class=" lb1 rounded-right"></div>
+                  <div class=" lb2">
+                      <div class="d-flex">
+                          <div class="infolist">
+                              <div><i class="fa fa-bed" aria-hidden="true"></i>تعداد تخت  3تا</div>
+                              <div><i class="fa fa-male person" aria-hidden="true"></i>ظرفیت 3 نفر</div>
+                              <div><i class="fa fa-coffee food" aria-hidden="true"></i>صبحانه دارد</div>
+                          </div>
+
+                          <div class="infolist">
+                              <div><i style="font-size:15px" class="fa money">&#xf0d6;</i>قیمت 180000 تومان</div>
+                              <div><i style="font-size:15px" class="fa sun">&#xf185;</i>
+                                  روزها 3 شب</div>
+                              <a class="text-right" style="font-size: 10px;" href="#">اطلاعات بیشتر<i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+
+                          </div>
+                      </div>
+                      <a  class="btn about-btn m-auto ">رزرو اتاق</a>
+
+
+                  </div>
+              </div>
+
+              <div class="boxlistflex white box-pos1">
+                  <div class=" lb5 rounded-right"></div>
+                  <div class=" lb2">
+                      <div class="d-flex">
+                          <div class="infolist">
+                              <div><i class="fa fa-bed" aria-hidden="true"></i>تعداد تخت  3تا</div>
+                              <div><i class="fa fa-male person" aria-hidden="true"></i>ظرفیت 3 نفر</div>
+                              <div><i class="fa fa-coffee food" aria-hidden="true"></i>صبحانه دارد</div>
+                          </div>
+
+                          <div class="infolist">
+                              <div><i style="font-size:15px" class="fa money">&#xf0d6;</i>قیمت 180000 تومان</div>
+                              <div><i style="font-size:15px" class="fa sun">&#xf185;</i>
+                                  روزها 3 شب</div>
+                              <a class="text-right" style="font-size: 10px;" href="#">اطلاعات بیشتر<i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+
+                          </div>
+                      </div>
+
+                      <a class="btn about-btn m-auto ">رزرو اتاق</a>
+
+
+                  </div>
+              </div>
+
+              <div class="boxlistflex white box-pos1">
+                  <div class=" lb1 rounded-right"></div>
+                  <div class=" lb2">
+                      <div class="d-flex">
+                          <div class="infolist">
+                              <div><i class="fa fa-bed" aria-hidden="true"></i>تعداد تخت  3تا</div>
+                              <div><i class="fa fa-male person" aria-hidden="true"></i>ظرفیت 3 نفر</div>
+                              <div><i class="fa fa-coffee food" aria-hidden="true"></i>صبحانه دارد</div>
+                          </div>
+
+                          <div class="infolist">
+                              <div><i style="font-size:15px" class="fa money">&#xf0d6;</i>قیمت 180000 تومان</div>
+                              <div><i style="font-size:15px" class="fa sun">&#xf185;</i>
+                                  روزها 3 شب</div>
+                              <a class="text-right" style="font-size: 10px;" href="#">اطلاعات بیشتر<i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+
+                          </div>
+                      </div>
+                      <a class="btn about-btn m-auto ">رزرو اتاق</a>
+
+
+                  </div>
+              </div>
+
+
+          </div>
+
+
+          <div class="d-flex justify-content-center"  >
+              <nav aria-label="Page navigation example">
+                  <ul class="pagination">
+                      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                  </ul>
+              </nav>
+
+
+          </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+</section>
+    <!--end section-->
+
+    <!--start footer-->
+    <footer>
+  <div class="footer-image">
+
+    <div class="layer">
+        <div class="container">
+            <div class="row">              
+                <div class="col-lg-6 col-sm-12 col-12" style="display: flex; justify-content: center; flex-direction: column;">
+                    <div class="boxfooter flex-container" >
+                        <div class="flex1">
+                            <div style="font-size: 20px; color: white!important;">دسترسی سریع</div>
+                            <div><a href="#">معرفی شرکت</a></div>
+                            <div><a href="#">معاونین و مدیران</a></div>
+                            <div><a href="#">تورهای مسافرتی</a></div>
+                        </div>
+
+                        <div class="flex2">
+                                <div><a href="#">اخبار و رویدادها</a></div>
+                                <div><a href="#">لیست هتل ها</a></div>
+                                <div><a href="#">تماس با ما</a></div>
+                        </div>
+
+                        <div class="flex2">
+                                <div><a href="#">اعضای هیت مدیره</a></div>
+                                <div><a href="#">پکیج های نوروزی</a> </div>
+                                <div> <a href="#">آخرین آفرها</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-sm-4 col-4">
+                        <div class="boxfooter b1">
+                            <div style=" padding-top: 8vh!important; color: rgb(211, 211, 211)">نماد الکترونیکی</div>
+                     <!--     <div class="namadimg"></div> -->
+                     <img src="img/namad.png" class="namad">
+                        </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-8 col-8">
+                        <div class="boxfooter">
+                            <img src="img/logo-footer.png" class="logofooter">
+                            
+                            <div class="address"><i class="fa fa-map-marker" aria-hidden="true"></i>تهران،خیابان،ولیعصر،روبروی،توانیر،کوچه شمس،پلاک3</div>
+                            <div class="email"><i class="fa fa-envelope" aria-hidden="true"></i>info@ittic.com</div>
+                            <div class="contact"><i class="fa fa-phone" aria-hidden="true"></i>021 -82497</div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container lastline">
+            <div class="row">
+                    <div class="layer card text-center lastline1">         
+                            <div class="card text-center lastline1">                            
+                                    <div class="card-footer text-muted demofooter">
+                                      همه حقوق این سایت متعلق به شرکت سرمایه گذاری ایرانگردی و جهانگردی میباشد | <span><a href="#">شرایط استفاده</a></span> |  <span><a href="#">حریم خصوصی</a></span>
+                                    </div>    
+            </div>
+        </div>
+    </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</footer>
+    <!--end footer-->
+ 
+
+    <!-- Optional JavaScript -->
+
+
+
+
+    <!--   <script src="js/jquery-1.11.2.min.js"></script>-->
+   
+    <script src="js/bootstrap.js" ></script>
+
+
+    <script src="js/persianDatepicker.js"></script>
+    <script>
+    $(function () {
+        //usage
+        $(".usage").persianDatepicker();
+        //startDate & endDate
+        $("#pdpStartEnd").persianDatepicker({ startDate: "1394/11/12", endDate: "1395/5/5" });
+        $("#pdpStartToday").persianDatepicker({ startDate: "today", endDate: "1395/5/5" });
+        $("#pdpEndToday").persianDatepicker({ startDate: "1393/11/12", endDate: "today" });
+    });
+
+</script>
+
+
+
+
+
+  </body>
+
+</html>
